@@ -1,7 +1,24 @@
-> 前排吐槽:  软件抓包属实恶心，登陆的时候magisk被检测的话直接强制退出，代理网络环境也会强制退出
+> 前排提醒：仅供个人爬虫学习交流，切勿用于非法用途
+吐槽:  软件抓包属实恶心，登陆的时候magisk被检测的话直接强制退出，代理网络环境也会强制退出
 
 工具：
+
+抓包软件 ： Charles （教程：https://mcenjoy.cn/1188/） 或 httpcanary
 curl2python : https://curlconverter.com/python/
+
+
+## 流程：
+```flow
+st=>start: 开始
+op=>operation: session保存到cookie
+op2=>operation: 发送请求
+cond=>condition: Yes or No?
+e=>end
+st->op->op2->e
+
+cond(no)->op
+&
+```
 
 
 ## "我去图书馆"首页地址获取办法
